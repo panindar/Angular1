@@ -1,0 +1,12 @@
+<h1> User validation </h1>
+<form>
+    <div class="form-group">
+        <label> Enter userName</label>
+        <input #myuser type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label> Enter Your Email</label>
+        <input #mypass type="password" class="form-control">
+    </div>
+    <button (click)="onSubmit(myuser.value, mypass.value)" type="button"> login</button>
+</form>
